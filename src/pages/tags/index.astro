@@ -24,7 +24,7 @@ invariant(settings, "Settings not found");
       </div>
       <div class="tag-feed">
         {
-          tags.tags.map((tag) => (
+          tags.map((tag) => (
               <article class="post-card ">
                 <TagCard tag={tag} settings={settings} />
               </article>
