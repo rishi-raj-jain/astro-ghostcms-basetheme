@@ -6,7 +6,7 @@ import PostPreviewList from "~/components/PostPreviewList.astro";
 import HeroContent from "~/components/HeroContent.astro";
 import Paginator from "~/components/Paginator.astro";
 import { getGhostSettings, getGhostPosts } from "@adammatthiesen/astro-ghostcms";
-import type { PostOrPage } from 'node_modules/@adammatthiesen/astro-ghostcms/src/Types/ghost';
+import type { PostOrPage } from '@adammatthiesen/astro-ghostcms';
 
 export async function getStaticPaths({ paginate }:GetStaticPathsOptions) {
   const posts = await getGhostPosts();
