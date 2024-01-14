@@ -36,7 +36,7 @@ const { settings } = Astro.props as Props;
         {settings.facebook && (
           <a
             class="gh-social-facebook"
-            href={settings.facebook}
+            href={"https://www.facebook.com/" + settings.facebook}
             title="Facebook"
             target="_blank"
             rel="noopener"
@@ -49,7 +49,7 @@ const { settings } = Astro.props as Props;
         {settings.twitter && (
           <a
             class="gh-social-twitter"
-            href={settings.twitter}
+            href={"https://twitter.com/" + settings.twitter}
             title="Twitter"
             target="_blank"
             rel="noopener"
