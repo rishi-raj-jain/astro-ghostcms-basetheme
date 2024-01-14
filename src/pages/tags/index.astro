@@ -1,15 +1,15 @@
 ---
 import DefaultPageLayout from "~/layouts/default.astro";
 import TagCard from "~/components/TagCard.astro";
-import { getSettings, getAllTags } from "~/utils/api";
+import { getGhostSettings, getGhostTags } from "@adammatthiesen/astro-ghostcms";
 import invariant from 'tiny-invariant';
 
 
 let title = "All Tags";
 let description = "All the tags used so far...";
 
-const tags = await getAllTags();
-const settings = await getSettings();
+const tags = await getGhostTags();
+const settings = await getGhostSettings();
 invariant(settings, "Settings not found");
 ---
 
