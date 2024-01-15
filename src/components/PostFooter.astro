@@ -22,9 +22,9 @@ const { post, settings, posts } = Astro.props as Props;
 <aside class="read-more-wrap">
   <div class="read-more inner">
     {posts
-      .filter((p: Post) => p.id !== post.id)
+      .filter((p: PostOrPage) => p.id !== post.id)
       .slice(0, 3)
-      .map((post: Post) => <PostPreview post={post} settings={settings} />)}
+      .map((post: PostOrPage) => <PostPreview post={post} settings={settings} />)}
   </div>
 </aside>
 

@@ -29,9 +29,11 @@ const { post, settings } = Astro.props as Props;
         </h4>
         )}
         <div class="byline-meta-content">
-          <time class="byline-meta-date" datetime={formatDate(post.created_at)}
+          {post.created_at && (
+            <time class="byline-meta-date" datetime={formatDate(post.created_at)}
             >{formatDate(post.created_at)}
           </time>
+          )}
           <span class="byline-reading-time"
             ><span class="bull">&bull;</span>
             {post.reading_time} min read
