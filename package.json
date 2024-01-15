@@ -34,6 +34,6 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "@adammatthiesen/astro-ghostcms": "^0.0.1-beta.3"
+    "@adammatthiesen/astro-ghostcms": "^1.0.2"
   }
 }
