@@ -15,7 +15,7 @@ const { content, settings, bodyClass = "" } = Astro.props as Props;
 const ghostAccentColor = settings.accent_color?settings.accent_color:null;
 ---
 
-<html lang="en" data-color-scheme="dark">
+<html lang="en" data-color-scheme="light">
   <head>
     <BaseHead
       title={content?.title ? `${settings.title} | ${content.title}` : "" }
